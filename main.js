@@ -5,9 +5,8 @@ let description=document.getElementById('description');
 let Submit=document.getElementById('Submit');
 
 
-
-
 //ajoute tache
+
 let datatache;
 if(localStorage.SaveTach!=null){
     datatache=JSON.parse(localStorage.SaveTach)
@@ -44,11 +43,12 @@ function afficheData(){
                             <td>${datatache[i].description}</td>
                             <td>${datatache[i].statu}r</td>
                             <td>${datatache[i].date}</td>
-                            <td><button type="button" class="btn btn-primary">Modifier</button></td>
-                            <td><button onclick="SupprimerData(${i})" type="button" class="btn btn-danger">Supprimer</button></td>        
+                            <td><button onclick="ModifierData(${i}) " type="button" class="btn btn-primary">Modifier</button></td>
+                            <td><button onclick="SupprimerData(${i})" type="button" class="btn btn-danger">Supprimer</button></td> 
+                                    
          </tr>
                 `
-    }
+                }
  document.getElementById('tbody').innerHTML=table;
 }
 afficheData();
@@ -59,5 +59,30 @@ function SupprimerData(i){
    console.log(i)
    afficheData();
 }
+
+
+
 //modifier tache
+function ModifierData(i){
+    nom.value=datatache[i].nom;
+    description.value=datatache[i].description;
+    statu.value=datatache[i].statu;
+    date.value=datatache[i].date;
+    SupprimerData(i)
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //rocherche
