@@ -5,9 +5,48 @@ body {
 *{
     color: #fff;
 }
+.statu-date{
+    display: flex;
+    gap: 5%;
+}
 #Submit{
  
+    display: none;
     
+}
+.bahom{
+    background-color:#1d2630;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  
+}
+.bahom:hover{
+    border:1px solid ;
+}
+.Card{
+    padding: 5px;
+    display: flex;
+    border:1px solid #fff;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+   
+}
+.Card-description{
+    display: block;
+}
+
+.Card h5,p{
+    margin-left: 20px;
+}
+.rida{
+    display: flex;
+}
+.button-card{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
 }
 option{
     color: #000000;
