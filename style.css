@@ -5,10 +5,7 @@ body {
 *{
     color: #fff;
 }
-.statu-date{
-    display: flex;
-    gap: 5%;
-}
+
 #Submit{
  
     display: none;
@@ -22,7 +19,7 @@ body {
   
 }
 .bahom:hover{
-    border:1px solid ;
+ border:1px solid ;
 }
 .Card{
     padding: 5px;
